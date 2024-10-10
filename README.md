@@ -1,8 +1,8 @@
-# Jason_Chan
+# Jason Chan
 
 
-Pedro Ferraz Romão
+* Pedro Ferraz Romão
 
-Ruan Pablo Fernandes Silva
-
-* [Biografia](https://github.com/RuanPSilva/Jason_Chan/wiki/Biografia)
+* Ruan Pablo Fernandes Silva
+<br>
+[Biografia](https://github.com/RuanPSilva/Jason_Chan/wiki/Biografia)
