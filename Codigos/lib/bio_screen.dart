@@ -84,7 +84,7 @@ class MaisInfo extends StatelessWidget {
 
                 // Descrição com barra de rolagem
                 Container(
-                  height: 105, // Limita a altura do container
+                  height: 105, 
                   child: SingleChildScrollView(
                     child: Text(
                       description,
@@ -179,7 +179,7 @@ class _BioScreenState extends State<BioScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff2b2b2b), // Cor de fundo
+      backgroundColor: Color(0xff2b2b2b), 
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -193,7 +193,7 @@ class _BioScreenState extends State<BioScreen> {
               children: [
                 Positioned.fill(
                   child: Container(
-                    height: 250, // Aumente a altura conforme necessário
+                    height: 250, 
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: NetworkImage(
@@ -232,7 +232,7 @@ class _BioScreenState extends State<BioScreen> {
               padding: const EdgeInsets.symmetric(
                   vertical: 15,
                   horizontal:
-                      65), // Menor padding vertical para reduzir a altura
+                      65), 
               child: Column(
                 children: [
                   Stack(
@@ -244,7 +244,7 @@ class _BioScreenState extends State<BioScreen> {
                       //
                       Positioned(
                         top:
-                            -60, // Ajuste de posição para que metade do avatar fique sobre o banner
+                            -60, 
                         left: -15,
                         child: CircleAvatar(
                           radius: 50,
@@ -298,7 +298,7 @@ class _BioScreenState extends State<BioScreen> {
               ],
             ),
 
-            SizedBox(height: 20), // Espaçamento antes da seção de métricas
+            SizedBox(height: 20), 
 
             // Seção de Posts e Seguidores ***
             Padding(
@@ -364,7 +364,6 @@ class _BioScreenState extends State<BioScreen> {
             //
             // Área de posts ***
             //
-            // GridView com 9 imagens e descrições
             GridView.builder(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
@@ -379,7 +378,6 @@ class _BioScreenState extends State<BioScreen> {
                 final item = items[index];
                 return GestureDetector(
                   onTap: () {
-                    // Ao clicar na imagem, abre a nova tela com detalhes
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -417,7 +415,7 @@ class _BioScreenState extends State<BioScreen> {
         ),
       ),
       bottomNavigationBar: Container(
-        color: Color(0xff343334), // Cor do fundo da barra de navegação
+        color: Color(0xff343334), 
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 15),
           child: GNav(
